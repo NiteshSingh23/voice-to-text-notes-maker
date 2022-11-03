@@ -28,11 +28,10 @@
       .map(result => result[0])
       .map(result => result.transcript)
       .join('');
-       
-       const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '💩');
+
+      const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '💩');
       p.textContent = poopScript;
 
-       
       if (e.results[0].isFinal) {
         p = document.createElement('p');
         words.appendChild(p);
@@ -49,14 +48,12 @@
     html {
       font-size: 10px;
     }
-
     body {
       background: #ffc600;
       font-family: 'helvetica neue';
       font-weight: 200;
       font-size: 20px;
     }
-
     .words {
       max-width: 500px;
       margin: 50px auto;
@@ -73,7 +70,6 @@
     p {
       margin: 0 0 3rem;
     }
-
     .words:before {
       content: '';
       position: absolute;
